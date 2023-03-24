@@ -16,7 +16,10 @@
         android:elevation="3pt"
         app:itemRippleColor="@android:color/transparent"
         app:itemIconSize="30dp"
-        app:labelVisibilityMode="unlabeled"/>
+        app:labelVisibilityMode="unlabeled"
+        android:background="@drawable/rounded_corner"
+        app:itemIconTint="@drawable/item_selector"
+        app:menu="@menu/bottom_menu"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

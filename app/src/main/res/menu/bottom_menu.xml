@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_budget"
+        android:icon="@drawable/baseline_account_balance_24"
+        android:title="budget" />
+    <item
+        android:id="@+id/nav_new_transactions"
+        android:icon="@drawable/baseline_upcoming_24"
+        android:title="new_transactions" />
+</menu>
