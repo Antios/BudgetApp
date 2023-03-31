@@ -1,9 +1,98 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".TransactionView">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TransactionView"
+    android:background="@color/eggshell_white">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:background="@color/dark_green"
+                >
+                
+                <TextView
+                    android:id="@+id/new_transaction_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="This is a test"
+                    android:textSize="20dp"
+                    android:textColor="@color/blue_white"
+                    android:fontFamily="@font/opensans_semibold">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/new_transaction_text_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/opensans_semibold"
+                    android:text="2000-01-05"
+                    android:textColor="@color/blue_white"
+                    android:textSize="10dp"
+                    android:layout_toRightOf="@id/new_transaction_text"
+                    android:layout_alignBottom="@id/new_transaction_text"
+                    android:layout_marginLeft="5dp">
+                </TextView>
+
+                <Button
+                    android:id="@+id/grocery_button"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@id/new_transaction_text_time"
+                    android:background="@drawable/circle"
+                    app:icon="@drawable/baseline_local_grocery_store_24" />
+
+                <Button
+                    android:id="@+id/fastfood_button"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@id/grocery_button"
+                    android:background="@drawable/circle"
+                    app:icon="@drawable/baseline_fastfood_24" />
+
+                <Button
+                    android:id="@+id/gas_button"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@id/fastfood_button"
+                    android:background="@drawable/circle"
+                    app:icon="@drawable/baseline_local_gas_station_24" />
+
+                <Button
+                    android:id="@+id/shopping_button"
+                    android:layout_width="51dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toEndOf="@id/gas_button"
+                    android:background="@drawable/circle"
+                    app:icon="@drawable/baseline_shopping_bag_24" />
+
+                <androidx.appcompat.widget.ActionMenuView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+        
+        
+    </RelativeLayout>
+
+</RelativeLayout>
