@@ -50,36 +50,37 @@
 
                 <Button
                     android:id="@+id/grocery_button"
-                    android:layout_width="51dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_toEndOf="@id/new_transaction_text_time"
                     android:background="@drawable/circle"
-                    app:icon="@drawable/baseline_local_grocery_store_24" />
+                    app:icon="@drawable/baseline_local_grocery_store_24"
+                    />
 
                 <Button
                     android:id="@+id/fastfood_button"
-                    android:layout_width="51dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_toEndOf="@id/grocery_button"
                     android:background="@drawable/circle"
                     app:icon="@drawable/baseline_fastfood_24" />
 
                 <Button
                     android:id="@+id/gas_button"
-                    android:layout_width="51dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_toEndOf="@id/fastfood_button"
                     android:background="@drawable/circle"
                     app:icon="@drawable/baseline_local_gas_station_24" />
 
                 <Button
                     android:id="@+id/shopping_button"
-                    android:layout_width="51dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="8dp"
                     android:layout_toEndOf="@id/gas_button"
                     android:background="@drawable/circle"
                     app:icon="@drawable/baseline_shopping_bag_24" />
